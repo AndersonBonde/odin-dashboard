@@ -1,5 +1,6 @@
 :root {
     --nav-color: rgb(37, 168, 212);
+    --background-gray: rgb(230, 233, 236);
 }
 
 * {
@@ -72,7 +73,6 @@ nav li > i {
 /* Header */
 
 .container > header {
-    background-color: aquamarine;
     grid-column: 1 / -1;
     display: grid;
     grid-template-rows: 60px 1fr;
@@ -101,7 +101,7 @@ nav li > i {
     border: none;
     border-radius: 16px;
     padding: 6px 12px;
-    background-color: rgb(230, 233, 236);
+    background-color: var(--background-gray);
 }
 
 .search .notifications {
@@ -166,11 +166,56 @@ nav li > i {
 /* Main */
 
 main {
-    background-color: tomato;
+    background-color: var(--background-gray);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px repeat(3, 1fr) 20px;
+    gap: 30px;
+    padding: 20px;
+}
+
+main > h3 {
+    font-size: 1.35rem;
+    grid-column: 1 / -1;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+}
+
+.project-card .left-border-color {
+    min-width: 8px;
+    background-color: var(--nav-color);
+}
+
+.project-card .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card .content p {
+    color: grey;
+}
+
+.project-card .links {
+    margin-top: auto;
+    align-self: end;
+    display: flex;
+    gap: 30px;
+}
+
+.project-card .links a {
+    color: black;
+    transform: scale(1.25);
 }
 
 /* Aside */
 
 .container > aside {
-    background-color: darkgoldenrod;
+    background-color: lightgray;
 }
