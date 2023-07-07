@@ -61,9 +61,15 @@
             <div class="search">
                 <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <input type="text" name="search" id="search">
-                <i class="fa-regular fa-bell notifications"></i>
-                <img src="images/fox.jpg" alt="User profile picture" class="profile-picture">
-                <p class="user-name">Foo Bar</p>
+                <a href="#" class="notifications">
+                    <i class="fa-regular fa-bell"></i>
+                </a>
+                <a href="#">
+                    <img src="images/fox.jpg" alt="User profile picture" class="profile-picture">
+                </a>
+                <a href="#">
+                    <p class="user-name">Foo Bar</p>
+                </a>
             </div>
             <div class="actions">
                 <div class="user-card">
@@ -89,13 +95,13 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque veritatis est reiciendis repudiandae ut similique rem cum dolores neque dignissimos doloribus quae ex, ipsam sint odit inventore minima.</p>
                     <div class="links">
                         <a href="#">
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star" title="Favorite"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-eye" title="Watch"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-pen-to-square" title="Edit"></i>
                         </a>
                     </div>
                 </div>
@@ -107,13 +113,13 @@
                     <p>I Love You! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque veritatis est reiciendis repudiandae ut similique rem.</p>
                     <div class="links">
                         <a href="#">
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star" title="Favorite"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-eye" title="Watch"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-pen-to-square" title="Edit"></i>
                         </a>
                     </div>
                 </div>
@@ -125,13 +131,13 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque veritatis est reiciendis repudiandae ut similique rem cum dolores neque dignissimos.</p>
                     <div class="links">
                         <a href="#">
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star" title="Favorite"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-eye" title="Watch"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-pen-to-square" title="Edit"></i>
                         </a>
                     </div>
                 </div>
@@ -143,13 +149,13 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque veritatis est reiciendis repudiandae ut similique rem cum dolores neque dignissimos doloribus quae ex, ipsam sint odit inventore minima. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam deleniti.</p>
                     <div class="links">
                         <a href="#">
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star" title="Favorite"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-eye" title="Watch"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-pen-to-square" title="Edit"></i>
                         </a>
                     </div>
                 </div>
@@ -161,13 +167,13 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque veritatis est reiciendis repudiandae ut similique rem cum dolores neque dignissimos doloribus quae.</p>
                     <div class="links">
                         <a href="#">
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star" title="Favorite"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-eye" title="Watch"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-pen-to-square" title="Edit"></i>
                         </a>
                     </div>
                 </div>
@@ -179,13 +185,13 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ratione voluptas enim quos ea aperiam tenetur a voluptatibus fugiat?</p>
                     <div class="links">
                         <a href="#">
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star" title="Favorite"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-eye" title="Watch"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-pen-to-square" title="Edit"></i>
                         </a>
                     </div>
                 </div>
@@ -194,11 +200,73 @@
         <aside class="aside">
             <h3>Announcements</h3>
             <div class="announcements">
-
+                <div class="announcement">
+                    <h4>Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maiores perspiciatis autem? Natus facere voluptatem ut neque sunt.</p>
+                </div>
+                <div class="announcement">
+                    <h4>Changes</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maiores perspiciatis autem? Natus facere voluptatem ut neque sunt.</p>
+                </div>
+                <div class="announcement">
+                    <h4>Thunder</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deserunt quod ea, placeat minima tempora alias minus eligendi ab magnam commodi officia similique tenetur amet assumenda earum odit aliquid repellendus laudantium vero? Quos minus tempore non esse illum necessitatibus molestias.</p>
+                </div>
             </div>
             <h3>Trending</h3>
             <div class="trending">
-                
+                <div class="trending-card">
+                    <div class="image">
+                        <img src="images/fox.jpg" alt="Profile picture">
+                    </div>
+                    <div class="name">
+                        <p class="at">
+                            @foobar
+                        </p>
+                        <p class="description">
+                            Peaches Peaches Peaches
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <div class="image">
+                        <img src="images/unknown-icon.png" alt="Profile picture">
+                    </div>
+                    <div class="name">
+                        <p class="at">
+                            @drunkbefore9
+                        </p>
+                        <p class="description">
+                            Diving gear for drunks
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <div class="image">
+                        <img src="images/unknown-icon.png" alt="Profile picture">
+                    </div>
+                    <div class="name">
+                        <p class="at">
+                            @nonoexcuses
+                        </p>
+                        <p class="description">
+                            How to train your rat to use a litter box
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <div class="image">
+                        <img src="images/fox.jpg" alt="Profile picture">
+                    </div>
+                    <div class="name">
+                        <p class="at">
+                            @foobar
+                        </p>
+                        <p class="description">
+                            Walking your pet turtle
+                        </p>
+                    </div>
+                </div>
             </div>
         </aside>
     </div>
