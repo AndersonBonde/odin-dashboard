@@ -20,7 +20,7 @@ body {
     grid-template-columns: 2;
     display: grid;
     grid-template-columns: 1fr 360px;
-    grid-template-rows: 150px calc(100vh - 160px);
+    grid-template-rows: 150px calc(100vh - 150px);
 }
 
 /* Nav */
@@ -315,4 +315,17 @@ main > h3 {
 
 .trending-card .description {
     color: gray;
+}
+
+@media screen and (max-width: 1220px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .project-card {
+        min-height: 200px;
+        overflow: hidden;
+    }
 }
